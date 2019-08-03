@@ -15,7 +15,6 @@ import { WorkComponent } from '../work/work.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { ParticlesModule } from 'angular-particle';
 
-
 import { Index1Component } from './index1/index1.component';
 import { Index2Component } from './index2/index2.component';
 import { Index3Component } from './index3/index3.component';
@@ -31,12 +30,12 @@ import { Index9Component } from './index9/index9.component';
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
     GetstartComponent, BlogComponent, ContactComponent, SocialComponent, TeamComponent, TestiComponent,
     WorkComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, 
-    Index7Component, Index8Component, Index9Component],
+    Index7Component, Index8Component, Index9Component, ],
   imports: [
     CommonModule,
     NgxYoutubePlayerModule.forRoot(),
     HomeRoutingModule,
-    ParticlesModule
+    ParticlesModule,
   ]
 })
 export class HomeModule { }

@@ -72,14 +72,62 @@ export class Index9Component implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 100,
+          value: 50,
+          density: {
+            enable: false
+          }
         },
         color: {
-          value: '#ffffff'
+          value: "#000"
+        },
+        opacity: {
+          value: 1,
+          anim: {
+            enable: false
+          }
         },
         shape: {
-          type: 'triangle',
+          type: ["circle","edge","polygon"],
+          stroke: {
+            width: 4,
+            color: "#fff"
+          },
+          polygon: {
+            nb_sides: 6
+          }
         },
+        size: {
+          value: 25,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 20,
+            size_min: 10,
+            sync: false
+          }
+        },
+        line_linked: {
+          enable: false
+        },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "none",
+          straight: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: false
+          }
+        },
+        modes: {
+          push: {
+            particles_nb: 12
+          }
+        }
       }
     };
   }
