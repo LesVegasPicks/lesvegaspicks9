@@ -69,66 +69,68 @@ export class Index9Component implements OnInit {
       'bottom': 0,
     };
 
-    this.myParams = {
-      particles: {
-        number: {
-          value: 50,
-          density: {
-            enable: false
-          }
-        },
-        color: {
-          value: "#000"
-        },
-        opacity: {
-          value: 1,
-          anim: {
-            enable: false
-          }
-        },
-        shape: {
-          type: ["circle","edge","polygon"],
-          stroke: {
-            width: 4,
-            color: "#fff"
+
+
+      this.myParams = {
+        particles: {
+          number: {
+            value: 25,
+            density: {
+              enable: false
+            }
           },
-          polygon: {
-            nb_sides: 6
-          }
-        },
-        size: {
-          value: 25,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 20,
-            size_min: 10,
-            sync: false
-          }
-        },
-        line_linked: {
-          enable: false
-        },
-        move: {
-          enable: true,
-          speed: 3,
-          direction: "none",
-          straight: false
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
+          color: {
+            value: "#000"
+          },
+          opacity: {
+            value: 4,
+            anim: {
+              enable: false
+            }
+          },
+          shape: {
+            type: ["circle","edge","polygon"],
+            stroke: {
+              width: 4,
+              color: "#fff"
+            },
+            polygon: {
+              nb_sides: 6
+            }
+          },
+          size: {
+            value: 25,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 30,
+              size_min: 10,
+              sync: false
+            }
+          },
+          line_linked: {
             enable: false
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            straight: false
           }
         },
-        modes: {
-          push: {
-            particles_nb: 12
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false
+            }
+          },
+          modes: {
+            push: {
+              particles_nb: 12
+            }
           }
         }
-      }
-    };
+      };
+    }
   }
-}
