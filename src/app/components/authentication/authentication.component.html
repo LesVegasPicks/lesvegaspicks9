@@ -40,8 +40,8 @@
     </div>
   </fieldset>
 
-<button type="submit" class="btn btn-success btn-back" [disabled]=!loginForm.valid>Login</button>&nbsp;
-<button type="submit" class="btn btn-success btn-back" (click)="registerCall()">Register</button>>&nbsp;
+<button type="submit" [disabled]=!loginForm.valid>Login</button>&nbsp;
+<button type="submit"  (click)="registerCall()">Register</button>>&nbsp;
 <span>Or <a (click)="socialSignIn('google')" class="google-button"><img src="assets/images/google.jpg" height=50px width=50px></a></span>
 <p>{{loading}}</p>
 <p>{{message}}</p>
