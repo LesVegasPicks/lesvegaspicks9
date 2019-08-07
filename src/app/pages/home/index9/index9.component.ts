@@ -103,7 +103,7 @@ export class Index9Component implements OnInit {
             random: true,
             anim: {
               enable: true,
-              speed: 30,
+              speed: 10,
               size_min: 10,
               sync: false
             }

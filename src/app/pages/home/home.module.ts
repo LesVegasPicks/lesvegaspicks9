@@ -26,11 +26,12 @@ import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
 
 
+
 @NgModule({
   declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
     GetstartComponent, BlogComponent, ContactComponent, SocialComponent, TeamComponent, TestiComponent,
     WorkComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, 
-    Index7Component, Index8Component, Index9Component, ],
+    Index7Component, Index8Component, Index9Component,   ],
   imports: [
     CommonModule,
     NgxYoutubePlayerModule.forRoot(),

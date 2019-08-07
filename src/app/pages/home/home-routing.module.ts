@@ -10,7 +10,7 @@ import { Index6Component } from './index6/index6.component';
 import { Index7Component } from './index7/index7.component';
 import { Index8Component } from './index8/index8.component';
 import { Index9Component } from './index9/index9.component';
-import { LoginComponent } from '../login/login.component';
+
 
 const routes: Routes = [
   { path: '', component: Index9Component },
@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'index7', component: Index7Component },
   { path: 'index8', component: Index8Component },
   { path: 'index9', component: Index9Component },
-  {path: 'login', component: LoginComponent}
+ 
+
 ];
 
 @NgModule({

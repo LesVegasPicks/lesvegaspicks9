@@ -9,11 +9,11 @@
       <div class="collapse navbar-collapse" id="navbarCollapse" scrollSpy>
           <ul class="navbar-nav navbar-center" id="mySidenav">
               <li class="nav-item">
-                  <a data="id_home"  [ngx-scroll-to]="'#home'" class="nav-link" >Home</a>
-              </li>
+                    <a data="id_home" class="nav-link" routerLink="login">Login</a>
+                </li>
               <li class="nav-item"  >
                
-               <a data="id_home" class="nav-link" routerLink="login">Login</a>
+               <a data="id_home" class="nav-link" routerLink="courses">Blog</a>
     
               </li>
               <li class="nav-item">
@@ -35,7 +35,7 @@
           <div class="nav-button ml-auto">
               <ul class="nav navbar-nav navbar-right">
                   <li>
-                      <button type="button" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Try it Free</button>
+                      <button type="button"  data="id_home" class="nav-link"  routerLink="regsiter" class="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Register</button>
                   </li>
               </ul>
           </div>

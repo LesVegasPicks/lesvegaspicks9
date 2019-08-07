@@ -6,15 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HttpModule } from '@angular/http';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-
-import { RegisterComponent } from './components/register/register.component';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { RouterModule, Routes }   from '@angular/router';
 
 import { NgxLoadingModule } from 'ngx-loading';
 import { LayoutModule } from './layout/layout.module';
-import { ReactiveFormsModule } from '@angular/forms';
 import {
   SocialLoginModule,
   AuthServiceConfig,
@@ -39,8 +36,9 @@ export function getAuthServiceConfigs() {
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
-    DashboardComponent,
+  
+
+
     
   ],
   imports: [
@@ -50,14 +48,13 @@ export function getAuthServiceConfigs() {
     HttpModule,
     SocialLoginModule,
     LayoutModule,
-    ReactiveFormsModule,
 
     NgxLoadingModule.forRoot({})
   ],
-  providers: [HttpClient,
+  providers: [HttpClient, 
     {
       provide: AuthServiceConfig,
-      useFactory: getAuthServiceConfigs
+      useFactory: getAuthServiceConfigs,
     }  
   ],
   bootstrap: [

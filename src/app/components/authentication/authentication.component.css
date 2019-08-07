@@ -1,11 +1,11 @@
 .margin-tp
 {
-    margin-top: 0em;
+    margin-top: 8em;
     margin-bottom: 2em
 }
 /* color of register button text */
 a:not([href]):not([tabindex]) {
-    color: white;
+    color: rgb(148, 112, 112);
     text-decoration: none;
 }
 
@@ -18,14 +18,14 @@ a:not([href]):not([tabindex]) {
 }
 .btn-back
 {
-    background-color:rgb(31, 121, 31) ;
+    background-color:rgba(26, 25, 25, 0) ;
     
 }
 
 /* card background */
 .card-back
 {
-    background-color: rgb(31, 121, 31);
+    background-color: rgb(10, 10, 10);
     color: white;
 }
 

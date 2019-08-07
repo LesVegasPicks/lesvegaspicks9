@@ -49,6 +49,8 @@
 /*----Demo 7 Home with video --------*/
 /*---Demo 8 Animated ---*/
 /* ------- Demo 9 wave animation --------- */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 @keyframes "move_wave" {
   0% {
     transform: translateX(0) translateZ(0) scaleY(1);
