@@ -30,6 +30,8 @@
     "contentful": "^7.9.1",
     "core-js": "^2.5.4",
     "firebase": "^6.4.2",
+    "firebase-admin": "^8.4.0",
+    "firebase-functions": "^3.2.0",
     "marked": "^0.7.0",
     "ng-animate": "^0.3.4",
     "ng-simple-slideshow": "^1.2.9",
