@@ -26,10 +26,11 @@ import { environment } from 'src/environments/environment';
 import { AuthService } from "src/app/services/auth.service";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
-  declarations: [ SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, DashboardComponent,  MdToHtmlPipe, CourseListComponent, LoginComponent, RegisterComponent],
+  declarations: [ SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, DashboardComponent,  MdToHtmlPipe, CourseListComponent, LoginComponent, RegisterComponent, CheckoutComponent],
   imports: [
     CommonModule, 
     HomeModule,
