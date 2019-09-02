@@ -4,7 +4,6 @@ import { HomeRoutingModule } from './home-routing.module';
 import { ServicesComponent } from '../services/services.component';
 import { AboutComponent } from '../about/about.component';
 import { DescriptionComponent } from '../description/description.component';
-import { PricingComponent } from '../pricing/pricing.component';
 import { GetstartComponent } from '../getstart/getstart.component';
 import { BlogComponent } from '../blog/blog.component';
 import { ContactComponent } from '../contact/contact.component';
@@ -14,6 +13,8 @@ import { TestiComponent } from '../testi/testi.component';
 import { WorkComponent } from '../work/work.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { ParticlesModule } from 'angular-particle';
+import { PricingComponent } from '../pricing/pricing.component';
+
 
 import { Index1Component } from './index1/index1.component';
 import { Index2Component } from './index2/index2.component';
@@ -28,7 +29,7 @@ import { Index9Component } from './index9/index9.component';
 
 
 @NgModule({
-  declarations: [Index1Component, ServicesComponent, AboutComponent, DescriptionComponent, PricingComponent,
+  declarations: [Index1Component, ServicesComponent, PricingComponent, AboutComponent, DescriptionComponent, 
     GetstartComponent, BlogComponent, ContactComponent, SocialComponent, TeamComponent, TestiComponent,
     WorkComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, 
     Index7Component, Index8Component, Index9Component,   ],
