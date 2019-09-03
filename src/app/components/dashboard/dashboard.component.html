@@ -13,7 +13,7 @@
             </li>
             <!-- Calling SignOut() Api from AuthService -->
             <li class="nav-item">
-              <a class="nav-link" (click)="authService.SignOut()">
+              <a class="nav-link" routerLink="/login">
                 <i class="fas fa-sign-out-alt"></i>Log out
               </a>
             </li>
@@ -27,6 +27,12 @@
   
           <div class="pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">User Profile</h1>
+            <div class="a">
+              <div class="row margin-tp">
+          
+          
+    
+            
           </div>
           <!-- Show user data when logged in -->
           <div class="row" *ngIf="authService.userData as user">
@@ -40,12 +46,24 @@
                   <p>Email: <strong>{{user.email}}</strong></p>
                   <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
                 </div>
+                <div class="alert alert-info" role="alert" *ngFor="let course of courses">
+                  <div class="p-2">
+            
+                    <a href="{{ course.fields.url }}" target="_blank"><img src="{{ course.fields.courseImage.fields.file.url }}" class="rounded" width="196" /></a>
+                  </div>
+                  <div class="p-2">
+                    <h5 class="alert-heading"><a href="{{ course.fields.url }}" target="_blank">{{ course.fields.title }}</a></h5>
+                    <p><i>{{ course.fields.author }}</i></p>
+                    <div [innerHTML]="course.fields.description | mdToHtml"></div>
+                    <a href="{{ course.fields.url }}" target="_blank" class="btn btn-success">Go To Course</a>
+                  </div>
+                </div>
+              </div>
+              </div>
               </div>
             </div>
           </div>
   
         </div>
       </main>
-  
-    </div>
-  </div>
+

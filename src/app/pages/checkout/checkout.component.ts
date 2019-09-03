@@ -42,7 +42,7 @@ export class CheckoutComponent implements OnInit {
   ngAfterViewChecked(): void {
     if (!this.addScript) {
       this.addPaypalScript().then(() => {
-        paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
+        paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn', '#paypal-checkout-btn2');
         this.paypalLoad = false;
       })
     }

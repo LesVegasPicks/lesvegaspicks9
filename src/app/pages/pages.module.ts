@@ -27,10 +27,11 @@ import { AuthService } from "src/app/services/auth.service";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 @NgModule({
-  declarations: [ SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, DashboardComponent,  MdToHtmlPipe, CourseListComponent, LoginComponent, RegisterComponent, CheckoutComponent],
+  declarations: [ SignInComponent, SignUpComponent, ForgotPasswordComponent, VerifyEmailComponent, DashboardComponent,  MdToHtmlPipe, CourseListComponent, LoginComponent, RegisterComponent, CheckoutComponent, ContactusComponent],
   imports: [
     CommonModule, 
     HomeModule,

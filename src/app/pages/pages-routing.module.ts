@@ -14,6 +14,7 @@ import { SecureInnerPagesGuard } from "src/app/shared/guard/secure-inner-pages.g
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   { path: 'courses', component: CourseListComponent},
   { path: 'checkout', component: CheckoutComponent},
+  { path: 'contactus', component: ContactusComponent},
 
   { path: 'sign-in', component: SignInComponent, canActivate: [SecureInnerPagesGuard]},
   { path: 'register-user', component: SignUpComponent, canActivate: [SecureInnerPagesGuard]},
