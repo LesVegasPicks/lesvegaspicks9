@@ -1,10 +1,17 @@
+@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
 .margin-tp
 {
     margin-top: 8em;
     margin-bottom: 2em
 }
 .a {
-    margin-left: 50%;
+    margin-left: 40%;
     margin-right: 50%;
 }
     
+.displayTable {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #631313;
+  }

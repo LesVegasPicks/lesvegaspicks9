@@ -8,6 +8,7 @@ import { ContentfulService } from '../contentful.service';
 import { MdToHtmlPipe } from '../md-to-html.pipe';
 import { CourseListComponent } from '../course-list/course-list.component';
 
+import { NgxPayPalModule } from 'ngx-paypal';
 
 // App components
 import { SignInComponent } from 'src/app/components/sign-in/sign-in.component';
@@ -40,7 +41,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    NgxPayPalModule
 
 
   ],
